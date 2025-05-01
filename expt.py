@@ -16,6 +16,8 @@ T = 1
 for i in range(0,4): 
   activation = linear_threshold_gate(dot_products[i],T) 
   print(f"Inputs: {inputs[i]} → Activation: {activation}") 
+
+#output:
 Inputs: [0 0] → Activation: 0 
 Inputs: [0 1] → Activation: 1 
 Inputs: [1 0] → Activation: 1 
@@ -40,6 +42,8 @@ T = 2
 for i in range(0,4): 
   activation = linear_threshold_gate(dot_products[i],T) 
   print(f"Inputs: {inputs[i]} → Activation: {activation}") 
+
+#output:
 Inputs: [0 0] → Activation: 0 
 Inputs: [0 1] → Activation: 0 
 Inputs: [1 0] → Activation: 0 
@@ -56,6 +60,8 @@ T = 0
 for i in range(0,2): 
   activation = linear_threshold_gate(np.dot(inputs[i],weights),T) 
   print(f"Inputs: {inputs[i]} → Activation: {activation}") 
+
+#output:
 Inputs: 0 → Activation: 1 
 Inputs: 1 → Activation: 0 
 
@@ -269,7 +275,9 @@ for i in range(len(Xi)):
  
 w=w+dw 
 print("Weight Matrix: {}".format(w)) 
-Output :- 
+
+
+#Output :- 
 Net : 2.5 
 Error -1.8 
 Weight Matrix: [ 0.97408569 -0.94817138  0.          
@@ -285,6 +293,7 @@ Weight Matrix: [ 0.94742711 -0.92968583  0.01060494  0.50470442]
                                 #Aim: Implementation of Single Discrete Perceptron 
                                 #Training Algorithm 
                                 #Source code and Output:- 
+
 import pandas as pd 
 import numpy as np 
 w= np.array([1,-1,0,0.5]).transpose() 
@@ -329,6 +338,7 @@ print("Iteration : {}".format(iteration))
 4.0 
 4.0 
 0.0 
+
 #output 
 Final Weight Matrix : [ -3.    8.    7.  -17.5] 
 Cycle epoch counter: 2 
