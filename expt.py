@@ -1,5 +1,5 @@
-1. OR Gate Implementation Using M-P Neuron 
-Source code and Output:- 
+                   #1. OR Gate Implementation Using M-P Neuron 
+                   #Source code and Output:- 
 
 import numpy as np 
 def linear_threshold_gate(dot_product, threshold): 
@@ -21,10 +21,10 @@ Inputs: [0 1] → Activation: 1
 Inputs: [1 0] → Activation: 1 
 Inputs: [1 1] → Activation: 1 
  
-2. AND Gate Implementation Using M-P Neuro 
+                     # 2. AND Gate Implementation Using M-P Neuro 
  
- 
-3. Source code and Output:- 
+                         # 3. Source code and Output:- 
+
 import numpy as np 
 inputs = np.array([ 
     [0,0], 
@@ -44,8 +44,10 @@ Inputs: [0 0] → Activation: 0
 Inputs: [0 1] → Activation: 0 
 Inputs: [1 0] → Activation: 0 
 Inputs: [1 1] → Activation: 1 
-4. NOT Gate Implementation Using M-P Neuron       
-Source code and Output:- 
+                                                     # 4. NOT Gate Implementation Using M-P Neuron       
+                                                      #Source code and Output:-
+
+
 inputs = np.array([0,1]) 
 weights = np.array([-1]) 
  
@@ -56,9 +58,12 @@ for i in range(0,2):
   print(f"Inputs: {inputs[i]} → Activation: {activation}") 
 Inputs: 0 → Activation: 1 
 Inputs: 1 → Activation: 0 
-1)  Linear Activation Function 
- 
-Source code and Output:- 
+
+
+                                             #1)  Linear Activation Function 
+                                        #  Source code and Output:- 
+
+
 def linear(x): 
     return x 
 plt.figure(figsize=(6, 4)) 
@@ -71,8 +76,10 @@ plt.grid()
 plt.show() 
  
  
-1. Sigmoid Function 
-Source code and Output:- 
+                                                     #1. Sigmoid Function 
+                                                     #Source code and Output:- 
+
+
 import numpy as np 
 import matplotlib.pyplot as plt 
 def sigmoid(x): 
@@ -88,8 +95,10 @@ plt.ylabel("Output")
 plt.legend() 
 plt.grid() 
 plt.show() 
-2. Tanh Activation Function  
-Source code and Output:- 
+                                                         # 2. Tanh Activation Function  
+                                                          # Source code and Output:-
+
+
  
 def tanh(x): 
     return np.tanh(x) 
@@ -102,9 +111,11 @@ plt.legend()
 plt.grid() 
 plt.show() 
  
-3. ReLU (Rectified Linear Unit) Function  
-Source code and Output:- 
-import numpy as np 
+                               #3. ReLU (Rectified Linear Unit) Function  
+                                   #Source code and Output:- 
+
+ 
+ import numpy as np 
 import matplotlib.pyplot as plt 
 def RELU(x): 
     x1 = [] 
@@ -125,10 +136,12 @@ plt.ylabel("Output (ReLU(x))")
 plt.legend() 
 plt.grid() 
 plt.show() 
- 
-1. Softmax Function 
-Source code and Output:- 
- 
+
+
+                       #1. Softmax Function 
+                       #Source code and Output:- 
+
+
 def softmax(x): 
     exp_x = np.exp(x) 
     return exp_x / np.sum(exp_x) 
@@ -141,9 +154,8 @@ plt.ylabel("Output (Softmax(x))")
 plt.legend() 
 plt.grid() 
 plt.show() 
-Binary Activation Function 
- 
-Source code and Output:- 
+                                                 #Binary Activation Function 
+                                                  #Source code and Output:- 
  
  
 import numpy as np 
@@ -159,9 +171,11 @@ plt.ylabel("Output")
 plt.legend() 
 plt.grid() 
 plt.show() 
-Aim : Implementation of Hebbian Learning Rule 
- 
-Source code and Output:- 
+
+
+                                                 #Aim : Implementation of Hebbian Learning Rule 
+                                                  #Source code and Output:- 
+
 import numpy as np 
 w = np.array([1, -1, 0, 0.5]).transpose() 
 xi = [ 
@@ -182,12 +196,14 @@ for iteration in range(iterations):
 print("Final weight matrix:", w) 
 print("Total iterations:", iterations) 
  
+#output:
 Final weight matrix: [ 1.  -8.5 13.5  0.5] 
 Total iterations: 3 
  
  
-Aim :- Implementation of Perceptron Learning Rule 
-Source code and Output:- 
+#Aim :- Implementation of Perceptron Learning Rule 
+#Source code and Output:- 
+
 W = np.array([1, -1, 0, 0.5]) Xi = [ 
     np.array([1, -2, 0, -1]), 
     np.array([0, 1.5, -0.5, -1]), 
@@ -208,7 +224,9 @@ print(f"Error: {error}")
 if error != 0: 
 W += c * error * Xi[i] 
 print(f"Updated Weights: {W}\n") 
-Output:- 
+
+#Output:- 
+
 Net: 2.5 
 Error: -2 
 Updated Weights: [ 0.8 -0.6  0.   0.7] 
@@ -222,9 +240,9 @@ Net: 0.8999999999999999
 Error: -2 
 Updated Weights: [4.00000000e-01 5.55111512e-17 1.00000000e-01 
 7.00000000e-01] 
-Aim: Implementation of Delta Learning Rule 
- 
-Source code and Output:- 
+
+                                #Aim: Implementation of Delta Learning Rule  
+                                #Source code and Output:- 
  
 import pandas as pd 
 import numpy as np 
@@ -263,9 +281,10 @@ Net : -2.463155269369176
 Error 
 1.8 
 Weight Matrix: [ 0.94742711 -0.92968583  0.01060494  0.50470442] 
-Aim: Implementation of Single Discrete Perceptron 
-Training Algorithm 
-Source code and Output:- 
+
+                                #Aim: Implementation of Single Discrete Perceptron 
+                                #Training Algorithm 
+                                #Source code and Output:- 
 import pandas as pd 
 import numpy as np 
 w= np.array([1,-1,0,0.5]).transpose() 
@@ -310,12 +329,15 @@ print("Iteration : {}".format(iteration))
 4.0 
 4.0 
 0.0 
+#output 
 Final Weight Matrix : [ -3.    8.    7.  -17.5] 
 Cycle epoch counter: 2 
 Iteration : 7 
-Aim : Implementation of Single Continuous Perceptron 
-Training Algorithm 
-Source code and Output:- 
+
+
+                                    #Aim : Implementation of Single Continuous Perceptron 
+                                    #Training Algorithm 
+                                    #Source code and Output:- 
 import numpy as np 
 import pandas as pd 
 w=np.array([1,-1,0,0.5]) 
@@ -351,7 +373,7 @@ print("Final Weight Matrix:{}".format(w))
 print("Cycle epoch counter:{}".format(j)) 
 print("Iteration:{}".format(iteration)) 
  
-Output:- 
+# Output:- 
 1.7 
 1.8 
 2.1 
@@ -364,9 +386,12 @@ Output:-
 0.0 
 Final Weight Matrix:[0.8066503  0.38217628 0.55448015 2.25624372] 
 Cycle epoch counter:3 
-Aim : Implementation of Perceptron as Classifier as Iris 
-Data 
-Source code and Output:- 
+
+
+                                            #Aim : Implementation of Perceptron as Classifier as Iris Data 
+                                             #Source code and Output:-
+
+
 import numpy as np 
 from sklearn.datasets import load_iris 
 from sklearn.model_selection import train_test_split 
@@ -413,9 +438,10 @@ from sklearn.metrics import classification_report
     accuracy                           1.00        30 
    macro avg       1.00      1.00      1.00        30 
 weighted avg       1.00      1.00      1.00        30 
-Aim: Implementation of Multilayer Perceptron as 
-classifier of Breast Cancer Data 
-Source code and Output:- 
+                                                      #Aim: Implementation of Multilayer Perceptron as classifier of Breast Cancer Data 
+                                                            #Source code and Output:-
+
+
 from sklearn.neural_network import MLPClassifier 
 from sklearn.datasets import load_breast_cancer 
 from sklearn.model_selection import train_test_split 
@@ -452,10 +478,10 @@ Classification Report:
 weighted avg       0.97      0.97      0.97       114 
  
  
-Aim: Implementation of Multilayer Perceptron Model 
-using TensorFlow and Keras. 
- 
-Source code and Output:- 
+                                                                              #Aim: Implementation of Multilayer Perceptron Model using TensorFlow and Keras. 
+                                                                                       #Source code and Output:-
+
+
 import tensorflow as tf 
 import numpy as np 
 from tensorflow.keras.models import Sequential 
@@ -471,6 +497,7 @@ print("Target matrix:", y_train.shape)
 print("Target matrix:", y_test.shape) 
  
 # Display some images 
+
 fig, ax = plt.subplots(10, 10, figsize=(10, 10)) 
 k = 0 
 for i in range(10): 
@@ -503,9 +530,10 @@ Trainable params: 235,146 (918.54 KB)
 Non-trainable params: 0(0.00 B) 
  
  
-Aim: Implementation of Convolutional Neural 
-Network(CNN) 
-Source code and Output:- 
+                                                                         #Aim: Implementation of Convolutional Neural Network(CNN) 
+                                                                           #Source code and Output:- 
+
+ 
 import tensorflow as tf 
 from tensorflow.keras import layers, models, datasets 
 import matplotlib.pyplot as plt 
@@ -560,8 +588,10 @@ plt.legend(loc='lower right')
 test_loss,test_acc = model.evaluate(test_images,test_labels,verbose=2) 
  
 print(test_acc) 
-Aim: Implementation of Recurrent Neural Network(RNN) 
-Source code and Output:- 
+                                    #Aim: Implementation of Recurrent Neural Network(RNN) 
+                                     #Source code and Output:- 
+
+
 !pip install tensorflow==2.2 
 !pip install keras 
 import tensorflow as tf 
